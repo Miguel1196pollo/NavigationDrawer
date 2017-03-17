@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/user_data">
+        <CheckBoxPreference
+            android:key="option1"
+            android:title="@string/sound"
+            android:summary="@string/sound_summary"/>
+
+    <EditTextPreference
+        android:key="option2"
+        android:title="@string/username"
+        android:summary="Identifies  user in the application"
+        android:dialogTitle="@string/username_summary"
+        />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/countries_data"
+        >
+    <ListPreference
+        android:key="option3"
+        android:title="@string/country"
+        android:summary="@string/user_country"
+        android:dialogTitle="@string/country_title"
+        android:entries="@array/countries"
+        android:entryValues="@array/country_codeS"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
